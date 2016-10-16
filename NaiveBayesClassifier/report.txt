@@ -1,0 +1,34 @@
+Assignment 1 Report
+
+Name: Farhan Mazhar
+
+1. Performance on the development data with 100% of the training data
+1a. spam precision: 0.9931
+1b. spam recall: 0.9774
+1c. spam F1 score: 0.9852
+1d. ham precision: 0.9467
+1e. ham recall:  0.9833
+1f. ham F1 score: 0.9647
+
+2. Performance on the development data with 10% of the training data
+The 10% development data was selected manually. No code written to seprate out the data.
+2a. spam precision: 0.9835
+2b. spam recall:  0.96
+2c. spam F1 score: 0.9716
+2d. ham precision: 0.9074
+2e. ham recall: 0.9607
+2f. ham F1 score: 0.9333
+
+3. Description of enhancement(s) you tried (e.g., different approach(es) to smoothing, treating common words differently, dealing with unknown words differently):
+
+  a. The first change was in the nblearn.py script during the creation of the model. I removed all the stopwords, punctuations and numericals from the corpus. This enhancement would result in the vocabulary consisting of only specific keywords that improves the performance of the classifier.
+
+ b. Different smoothing method: K-smoothing was used in place of add one smoothing. This showed a small increase in the spam precision and recall thereby improving the performance of the classifer. 
+
+4. Best performance results based on enhancements. Note that these could be the same or worse than the standard implementation.
+4a. spam precision: 0.9958
+4b. spam recall: 0.9782
+4c. spam F1 score: 0.9870
+4d. ham precision: 0.9489
+4e. ham recall: 0.99
+4f. ham F1 score: 0.9690
